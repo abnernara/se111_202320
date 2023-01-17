@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abner Cabral, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--in IN DOCUMENTS STYLING-->
+    <STYLE>
+        /* here we write in <CSS></CSS>
+        /* SELECTING in CSS & JAVASCRIPT: select specific element(s) on a page 
+
+
+        * By element or tag type   ex:bodym div, p
+        * By ID attribute          ex: #wrapper, #NAV, #footer, #tittle
+        * By CLASS attribute       ex: Coming in week 3
+
+
+     */
+       div {/*Applies to all divs on the page*/
+    border:1px solid black;
+       padding:10px; /*adds 10px todf space to all 4 4 sides o the elements. between its
+       content and uts border*/
+       margin:5px; /*adds 5 px of space to all 4 sides between other elements*/
+
+
+
+}
+
+
+#nav{/* # specifies ID name, only applies to single element with that ID*/
+
+    background: rgb(200, 200, 200);
+
+}
+
+#nav, #footer {/*can provid list or collection of elements} to select*/    
+    background-color:rgb(200, 200, 200);
+}
+
+a  {/*styles all a (link) tags in page*/    
+text-decoration: none; /*removes the underline*/
+font-size:20px;
+margin-right:25; /*adds 25 px of space to the right OF EACH link*/
+}
+/*4 default states--> :link, :active, :visited*/
+a:hover {
+color:teal;
+}
+ #footer {  
+     font-size:10px;  
+     text-align:center;
+ }
+ </style>     
+</head>
+
+<body style="background-color:grey;">
+    <div id="wrapper"><!--this div holds and "wraps around/together" all content on the page--> 
+<h1>Abner Cabral</h1>
+
+<!--NAVIGATION----------------->
+<div id="nav">
+
+<!--ID names can only be used 1x per page-->
+<!--linking to OUTSIDE pages [not part of website you need the FULL PATH-->
+<a href="https://www.meca.edu/" target="_blank">visit MECA</a>
+
+<!--href holds the URL of website linking to-->
+<!--target="_blank" opens link in a new tab in browser-->
+
+<!--IN-PAGE LINKS: linking to sections within the actual page itself(jumping to different sections)-->
+<a href="#bio">BIO</a>
+<a href="#school">SCHOOLING</a>
+<a href="#hobbies">HOBBIES</a>
+<a href="#footer">BOTTOM of Page</a>
+
+</div><!--/ #nav-->
+
+<!--BIO SECTION----------------->
+<div id="bio">
+</div>
+
+<h2>About Me</h2>
+My name is Abner Cabral, I'm 43 years old, 
+I have 3 daughters and I like many of them, 
+I live in Pawtucket, 
+I really like reading books, playing soccer
+
+
+
+
+
+
+
+
+
+
+
+
