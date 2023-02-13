@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<meta name="author" content="A Cabral"
+<meta name="description" content="Week 5 Intro to Tables & Formds">
+
+<title>w5D1| Tables & Forms</title>
+
+
+
+
+
+
+
+<h1>Basic Form Demo</h1>
+
+<h2> Form WITHOUT A Table [boooo]</h2>
+<!--neater aligment possibilities-->
+
+<!--form comes FIRST-->
+<form method="GET" action
+
+<!--labels are used to match up with the input elements to be read/processed more 
+    easily in JS -->
+    <!--
+        for attribute (input element) connects the label attribute value 
+        THESE MUST MACTH!
+    -->
+    <form>
+
+        <!--firstname-->
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname">
+        
+        <br>
+        <!--lastname-->
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname">
+
+          <br>
+        <!--email address-->
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+
+        <br>
+        <br>
+        <!--since there is more than 1 input element, 
+            the form NEEDS a submit button in order to generate the full query string -->
+            <input type="submit" value="SUBMIT! :)">
+
+
+    </form>
+
+    <h2> Form w/Table [yaaaaaay]</h2>
+
+    <!--form comes FIRST-->
+    <form>
+        <table>
+
+            <!--<thead> can be used for column headers-->
+
+                <!--<tbody> is required inside of a <table>-->
+                    <tbody>
+                        <!-- add data to the table row by row-->
+                        <tr><!--table row; should include one <td> for every possible colunm
+                            leave the <td></td> blank when no info for that row/column-->
+                         <td><!--LABEL-->
+                            <label for="eMail">Email:</label>
+                            </td>
+
+                            <td><!--INPUT-->
+                            <input type="text" name="eMail" id="eMail">
+
+                         <tr>
+
+
+                         </tr>
+
+
+                          </td><!--LABEL-->
+
+                          </tr>
+
+                          <td><!--INPUT-->
+                            <input type="time" value="submit">
+                    
+                        </td>
+                    </td>
+
+                        </tr>
+                    </tbody>
+        </table>
+    </form>
+<body>
+    
+</body>
+</html>
