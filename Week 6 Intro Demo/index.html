@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+
+    <meta name="author" content="Abner Cabral 202040">
+    <meta name="description" content="Week 6 JS Intro">
+    <tittle>Week6 |JS Intro</tittle>
+    </head>
+
+    <body>
+        <!--we should have some sort of HTML in the file-->
+        <h1>Week 6 Intro Demo | Introduction Javascript</h1>
+        <!-- DOCUMENT JAVASCRIPT-->
+        <!--in document:lives within the .html(you saw this with CSS)-->
+        <script>
+
+            //everything inside of the script tags MUST be written in JAVASCRIPT!
+            //creating a variable - keyword "var"
+
+             var num1 = 10
+             var num2 = 7
+
+             // cannot use num1 or num2 in a process unless they have been DEFINED (value store to them)
+             var sum = num1 + num2
+
+
+             console.log(sum) //often used for testing
+             //no physical display, only found in the console
+             //the user will not see
+
+             console.log("hello world")
+             //can also just print statements
+
+             console.log("hello world! the sum is: " + sum + "cool,right?")
+             //long way to display both tring and stored data :(
+
+             //SUPER POWERFUL STRINGS TYPES
+             console.log(`HELLO WORLD! the sum is: ${sum}. \n\n\ncool right?`) // Fun way
+             // escape sequences also work is Javascript --> \n (inside of strings!)
+
+             alert(`The sum is: \n${sum}!`)
+
+             //alert() allows for pop-up in the browser page to diplay data
+             //alert() --> print() /OUTPUT
+             // `` denotes a literal string --> works similar to .format() in Python -- hold var names insides of ${VAR}
+
+             console.log("hi")
+             //alert(sum)
+             console.log("HELLO")
+             //alert(`The sum is: $$ {sum.tofixed(2)}`)//Displays rounded decimals. EX-17.00
+             console.log("howdy")
+
+
+             /* viwe console
+             *F12/right-Click > Inspect
+             *Choose CONSOLE at top right
+             *Refresh page
+         */
+         
+         //is input() in python
+         //prompts user for value; waits for the Enter key
+         //is required to intereact with in order to advance
+         var name1 = prompt("Enter you name: ")
+         alert(`you're name is ${name}`)
+
+         //store value form prompt()
+         var name2 = prompt("Enter your Last Name: ")
+         alert(`Your last name is ${name}`)
+
+         alert(` you're full name is $ ${name}`)
+
+         alert(`you're full name is ${name} ${name2}`)
+
+         //if browser treaths prompt() return as a string, cast number() to use in math
+
+         //all data from prompt() is a STRING; must convert to Number() if wanting to do math
+
+         var square = num * num
+
+         console.log(square.tofixed(2))
+
+         //convert num to an actual Number
+         num = Number(num)
+
+         //num is now a NUMBER and can be used in a math process
+         var multi= num * 7
+
+         alert(`${num} *7 = ${multi}`) //in browser, pop-up alert
+
+         console.log(`the multi value is: ${multi}`) //in console [inspect]
+
+         </script>
+
+         </body>
+         <html>
+
+         </html>
+
+         
+
+        
+             
+            
+
+       
