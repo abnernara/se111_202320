@@ -1,101 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--The type of font we are using-->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Tells the -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<meta name="author" content="A Cabral"
-<meta name="description" content="Week 5 Intro to Tables & Formds">
-
-<title>w5D1| Tables & Forms</title>
-
-
-
-
-
-
-
-<h1>Basic Form Demo</h1>
-
-<h2> Form WITHOUT A Table [boooo]</h2>
-<!--neater aligment possibilities-->
-
-<!--form comes FIRST-->
-<form method="GET" action
-
-<!--labels are used to match up with the input elements to be read/processed more 
-    easily in JS -->
-    <!--
-        for attribute (input element) connects the label attribute value 
-        THESE MUST MACTH!
-    -->
-    <form>
-
-        <!--firstname-->
-        <label for="firstname">First Name:</label>
-        <input type="text" name="firstname" id="firstname">
-        
-        <br>
-        <!--lastname-->
-        <label for="lastname">Last Name:</label>
-        <input type="text" name="lastname" id="lastname">
-
-          <br>
-        <!--email address-->
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email">
-
-        <br>
-        <br>
-        <!--since there is more than 1 input element, 
-            the form NEEDS a submit button in order to generate the full query string -->
-            <input type="submit" value="SUBMIT! :)">
-
-
-    </form>
-
-    <h2> Form w/Table [yaaaaaay]</h2>
-
-    <!--form comes FIRST-->
-    <form>
-        <table>
-
-            <!--<thead> can be used for column headers-->
-
-                <!--<tbody> is required inside of a <table>-->
-                    <tbody>
-                        <!-- add data to the table row by row-->
-                        <tr><!--table row; should include one <td> for every possible colunm
-                            leave the <td></td> blank when no info for that row/column-->
-                         <td><!--LABEL-->
-                            <label for="eMail">Email:</label>
-                            </td>
-
-                            <td><!--INPUT-->
-                            <input type="text" name="eMail" id="eMail">
-
-                         <tr>
-
-
-                         </tr>
-
-
-                          </td><!--LABEL-->
-
-                          </tr>
-
-                          <td><!--INPUT-->
-                            <input type="time" value="submit">
-                    
-                        </td>
-                    </td>
-
-                        </tr>
-                    </tbody>
-        </table>
-    </form>
-<body>
+    <meta name="author" content="Abner Cabral">
+    <meta name="description" content="Default HTML Page for SE 111">
     
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+<h1>
+    Birth Party Registation 
+</h1>
+<form action="confirm.html" method="GET">
+    <table>
+        <thead>
+        <tr>
+            <th>Labels</th>
+            <th>Form Fields</th>
+        
+        </tr>
+        </thead>
+            <tbody>
+                <tr><td><label for="gfirst">Parent/Guardian name</label></td>
+                    <td><input type="text"required maxlength="20"name="gfirst"id="g-First"placeholder="First Name">
+                    <input type="text"required maxlength="20"name="gfirst"id="g-last"placeholder="Last Name"></td>
+                <tr>
+                    <td><label for="cfirst">Child`s First Name</label></td>
+                    <td><input type="text"required name="cfirst"id="c-first" placeholder="Child's FirstName"></td>
+                
+
+                    </tr>
+                </tr>
+                <tr>
+                    <td><label for="age">Child`s Age</label></td>
+                    <td><input type="number"required name="age"value="3"></td>
+                    
+
+                </tr>
+                <tr>
+                    <td><h2>Date and Time</h2></td>
+
+                </tr>
+                <tr><td><label for="Date">Date</label></td>
+                    <td><input type="date" required name="date"></td>
+                    </tr>
+                    <tr><td><label for="Time">Start Time</label></td>
+                        <td><input type="Time" required name="Time"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Guests">Number of Guests</label></td>
+                            <td><input type="number"required name="Guests"value="5"></td>
+                            </tr>
+                            <tr>
+                                <td><h2>Food</h2></td>
+                                
+
+            
+                            </tr>
+                        </tr>
+                    <tr><td><label for="Size">Size</label></td>
+                        <td>
+                            <input type="radio"required name="Size"value="sm"id="sm">
+                            <label for="sm">sm</label>
+                            <input type="radio"required name="Size"value="md"id="md">
+                            <label for="md">med</label>
+                            <input type="radio"required name="Size"value="lg"id="lg">
+                            <label for="sm">lg</label>
+                        </td>
+                        </tr>
+                        <tr><td><label for="Size">Drinks</label></td>
+                            <td>
+                                <input type="checkbox"name="drink1"checked="true"value="cooke">
+                                <label for="drink1">Coke<label><br>
+                                    <input type="checkbox"name="drink2"value="sprite">
+                                    <label for="drink2">Sprite<label><br>
+                                        <input type="checkbox"name="drink3"value="fruit punch">
+                                        <label for="drink3">fruit punch<label><br>
+                                            <input type="checkbox"name="drink4"value="lemonade">
+                                            <label for="drink4">lemonade<label><br>
+                                                <input type="checkbox"name="drink5"value="ice tea">
+                                                <label for="drink5">iced tea<label></label>
+
+                            </td>
+                            </tr>
+                            <tr><td><label for="cake">cake</label>
+                                
+
+                                </td>
+                                <td><select name="cake">
+                                    <option>Chocolate</option> 
+                                    <option>Vanilla</option> 
+                                    <option>I'll bring my own</option>
+
+                                        </select>
+
+                            </tr>
+                            <tr>
+                                <td><h2>Decorations</h2></td>
+
+
+                                
+
+            
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="colors">Color Scheme</label>
+
+                                </td>
+                                <td>
+                                    Choose a colors Scheme for the Party
+                                    <input type="color"name="colors">
+                                    
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="comments">Additional Comments</label>
+                                    
+                                </td>
+                                <td>
+                                    <textarea placeholder="Please add any additional comments here"name="comments"></textarea> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <input - type="submit"value="Submit">
+
+                                    
+                                </td>
+                            </tr>
+
+
+                            
+                        
+                        
+
+
+
+            </tbody>
+
+                    
+                    
+
+        
+        
+            
+            
+            
+           
+    
+    </table>
+
+</form>
+
+
+    
+
+
+
+
+
+
+
 </body>
 </html>
